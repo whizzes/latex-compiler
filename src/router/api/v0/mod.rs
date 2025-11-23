@@ -55,7 +55,7 @@ pub enum ApiErrorCode {
         )
     ),
     servers(
-        (url = "http://localhost:3000", description = "Local development server"),
+        (url = "http://localhost:9000", description = "Local development server"),
     )
 )]
 pub struct ApiV0Doc;

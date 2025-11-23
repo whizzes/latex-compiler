@@ -16,7 +16,7 @@ build-image: build
 	docker build -t "latex_compiler:$(COMMIT)" ./docker
 
 run: build-image
-	docker run -p 3000:3000 latex_compiler
+	docker run -p 9000:9000 latex_compiler
 
 stop:
 	docker rm $(docker stop $(docker ps -a --filter ancestor=latex_compiler --format="{{.ID}}"))

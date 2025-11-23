@@ -10,7 +10,7 @@
 
 ```bash
 docker pull ghcr.io/whizzes/latex_compiler:latest
-docker run -p 3000:3000 latex_compiler
+docker run -p 9000:9000 latex_compiler
 ```
 
 2. The service should be available in your local network by addressing `http://localhost:9000`
