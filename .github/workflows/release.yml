@@ -107,4 +107,4 @@ jobs:
           asset_name: latex-compiler-${{ matrix.rust_target }}
           file: latex-compiler-${{ matrix.rust_target }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ github.ref }}
+          tag: "${{ env.VERSION }}"
